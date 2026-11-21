@@ -1,0 +1,17 @@
+
+# Android / secrets
+build/
+.gradle/
+.idea/
+.cxx/
+local.properties
+key.properties
+*.jks
+*.keystore
+google-services.json
+*.apk
+*.aab
+.env
+
+# malware test samples, never publish
+shieldnetx/apk-analysis/testmalware/
