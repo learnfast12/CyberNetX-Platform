@@ -33,6 +33,12 @@ Threat intelligence flows from ShieldNetX into TraceNetX, so a scam blocked on o
 
 ---
 
+## Why this exists
+
+It started with a family member who lost about ₹70-80k to a fake "2 hours left to pay your credit card bill" link. Existing link checkers make you paste a link manually and only block links already known to be bad, so new scams slip through. On the other side, investigators catch only the end mule while the dealer who coordinates everything stays hidden. CyberNetX closes both gaps.
+
+---
+
 ## Screenshots
 
 <p align="center">
@@ -197,6 +203,17 @@ Each ShieldNetX component (extension, Android app, backend) has its own setup in
 1. Open `mobile/sentinel-android` in Android Studio and let Gradle sync.
 2. Set the backend URL in the app config.
 3. Run on a device, then enable the ShieldNetX Accessibility Service in Android settings.
+
+---
+## Business model
+
+Institutions pay, users stay free. ShieldNetX is free for everyday users (reach plus crowd signals). Banks, fintechs and payment apps pay for TraceNetX licenses, a per-check pre-transfer risk API, and a threat-intel feed (shared blocklist and payee intel).
+
+## Status
+
+- Working prototype, deployed live.
+- The TraceNetX demo runs on **synthetic data** (21 accounts, 42 transactions traced end to end, top risk score 92/100, flagged CRITICAL).
+- No customers yet. Blockers: real data access (banks, I4C), DPDP Act privacy review, and a controlled pilot to calibrate false positives. Looking for one pilot partner.
 
 ---
 
